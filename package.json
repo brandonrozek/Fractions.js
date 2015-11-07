@@ -1,0 +1,22 @@
+{
+  "name": "fractions",
+  "version": "1.0.0",
+  "description": "A library to help do more precise fractional math",
+  "main": "Fraction.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brandonrozek/Fraction.js"
+  },
+  "bugs": {
+    "url": "https://github.com/brandonrozek/Fraction.js/issues"
+  },
+  "scripts": {
+    "test": "node Tests.js"
+  },
+  "keywords": [
+    "fractions",
+    "math"
+  ],
+  "author": "Brandon Rozek <hello@brandonrozek.com> (https://brandonrozek.com)",
+  "license": "MIT"
+}
