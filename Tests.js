@@ -116,6 +116,7 @@ section("Helper Functions -- Advanced", function() {
 	        assert(Fraction.decimalToFraction(.25), new Fraction(1,4));
 	        assert(Fraction.decimalToFraction(1.7), new Fraction(17, 10));
 		assert(Fraction.decimalToFraction(8), new Fraction(8,1));
+		assert(Fraction.decimalToFraction(-.5), new Fraction(-1,2));
 	});
 });
 

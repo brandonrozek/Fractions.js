@@ -193,9 +193,14 @@ Fraction.decimalToFraction = function(x) {
 	var decLocation = x.indexOf('.');
 	if (decLocation != -1) {
 		var whole = x.substring(0, decLocation);
+		var isNegative = (whole.indexOf('-') != -1)? true: false;
 		var remainder = x.substring(decLocation + 1, x.length);
 		var nthPlace = Math.pow(10, remainder.length);
-		return Fraction.add(new Fraction(Number(whole), 1), new Fraction(Number(remainder), nthPlace))
+		if (isNegative) {
+			return Fraction.subtract(new Fraction(Number(whole), 1), new Fraction(Number(remainder), nthPlace))
+		} else {
+			return Fraction.add(new Fraction(Number(whole), 1), new Fraction(Number(remainder), nthPlace))
+		}
 	}
 	else { return new Fraction(Number(x)); }
 }
